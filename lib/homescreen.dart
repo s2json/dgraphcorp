@@ -1,4 +1,4 @@
-import 'package:dgraphcorp/welcome.dart';
+import 'package:dgraphcorp/widgets/welcome.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
