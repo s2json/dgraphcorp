@@ -1,5 +1,6 @@
 // Subtitles
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Subtitle extends StatelessWidget {
   final String subtitle;
@@ -11,16 +12,12 @@ class Subtitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          subtitle,
-          style: Theme.of(context).textTheme.bodyLarge,
-        ),
-        const SizedBox(
-          height: 15,
-        ),
-      ],
+    return Text(
+      subtitle,
+      style: GoogleFonts.roboto(
+        color: Colors.black,
+        fontSize: 20,
+      ),
     );
   }
 }

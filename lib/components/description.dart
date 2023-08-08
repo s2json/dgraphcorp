@@ -1,5 +1,6 @@
 // Description
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Description extends StatelessWidget {
   final String description;
@@ -11,16 +12,12 @@ class Description extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          description,
-          style: Theme.of(context).textTheme.bodyMedium,
-        ),
-        const SizedBox(
-          width: 30,
-        ),
-      ],
+    return Text(
+      description,
+      style: GoogleFonts.robotoCondensed(
+        fontSize: 15,
+        color: Colors.black,
+      ),
     );
   }
 }
